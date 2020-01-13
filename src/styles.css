@@ -1,0 +1,30 @@
+.logo {
+  width: 200px;
+  height: 100px;
+}
+
+li {
+  display: inline;
+  margin: 1rem;
+}
+
+li > div {
+  display: inline-block;
+}
+
+.Movie {
+  position: relative;
+  height: 14rem;
+}
+.Movie:hover > div > button {
+  cursor: pointer;
+  display: inline;
+}
+
+button {
+  display: none;
+  position: absolute;
+  bottom: 0%;
+  right: 20%;
+  width: 60%;
+}
