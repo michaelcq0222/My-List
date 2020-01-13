@@ -5,6 +5,7 @@ import * as actions from "./Actions";
 import "./styles.css";
 
 class App extends Component {
+  /*Load movie data here */
   componentDidMount() {
     this.props.getlist();
   }
@@ -31,7 +32,9 @@ class App extends Component {
               <li className="Movie" key={mv.id}>
                 <div>
                   <MovieList m={mv} />
-                  <button onClick={() => this.remove(i)}>REMOVE</button>
+                  <button className="button1" onClick={() => this.remove(i)}>
+                    REMOVE
+                  </button>
                 </div>
               </li>
             );
@@ -44,7 +47,9 @@ class App extends Component {
               <li className="Movie" key={mv.id}>
                 <div>
                   <MovieList m={mv} />
-                  <button onClick={() => this.add(i)}>ADD</button>
+                  <button className="button2" onClick={() => this.add(i)}>
+                    ADD
+                  </button>
                 </div>
               </li>
             );
@@ -54,7 +59,7 @@ class App extends Component {
     );
   }
 }
-
+/*Connect Redux State to props of react */
 const mapStateToProps = state => {
   return {
     ml: state.ml,
@@ -62,6 +67,7 @@ const mapStateToProps = state => {
   };
 };
 
+/*Connect actions to props of react */
 const mapDispatchToProps = dispatch => {
   return {
     remove: id => {

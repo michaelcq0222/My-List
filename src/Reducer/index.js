@@ -1,3 +1,5 @@
+/*Reducer/Pure Functions here for the 4 actions defined in actions such as the Fetch, Add and Remove
+ */
 const State = {
   ml: [],
   rec: []

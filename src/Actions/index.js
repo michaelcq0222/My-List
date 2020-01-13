@@ -1,5 +1,6 @@
 import axios from "axios";
 
+/*4 actions defined here, Fetch, Add, Remove and the helper to get data*/
 export function fetch(response) {
   return {
     type: "FETCH",

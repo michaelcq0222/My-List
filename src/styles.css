@@ -1,3 +1,9 @@
+body {
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
+}
+
 .logo {
   width: 200px;
   height: 100px;
@@ -27,4 +33,12 @@ button {
   bottom: 0%;
   right: 20%;
   width: 60%;
+}
+.button1 {
+  background-color: red;
+  color: black;
+}
+.button2 {
+  background-color: lightskyblue;
+  color: black;
 }
